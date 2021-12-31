@@ -1,0 +1,68 @@
+# CMake generation dependency list for this directory.
+C:/Program Files (x86)/ZED SDK/zed-config-version.cmake
+C:/Program Files (x86)/ZED SDK/zed-config.cmake
+C:/Program Files/CMake/share/cmake-3.22/Modules/CMakeCInformation.cmake
+C:/Program Files/CMake/share/cmake-3.22/Modules/CMakeCXXInformation.cmake
+C:/Program Files/CMake/share/cmake-3.22/Modules/CMakeCheckCompilerFlagCommonPatterns.cmake
+C:/Program Files/CMake/share/cmake-3.22/Modules/CMakeCommonLanguageInclude.cmake
+C:/Program Files/CMake/share/cmake-3.22/Modules/CMakeGenericSystem.cmake
+C:/Program Files/CMake/share/cmake-3.22/Modules/CMakeInitializeConfigs.cmake
+C:/Program Files/CMake/share/cmake-3.22/Modules/CMakeLanguageInformation.cmake
+C:/Program Files/CMake/share/cmake-3.22/Modules/CMakeParseArguments.cmake
+C:/Program Files/CMake/share/cmake-3.22/Modules/CMakeRCInformation.cmake
+C:/Program Files/CMake/share/cmake-3.22/Modules/CMakeSystemSpecificInformation.cmake
+C:/Program Files/CMake/share/cmake-3.22/Modules/CMakeSystemSpecificInitialize.cmake
+C:/Program Files/CMake/share/cmake-3.22/Modules/CheckCCompilerFlag.cmake
+C:/Program Files/CMake/share/cmake-3.22/Modules/CheckCSourceCompiles.cmake
+C:/Program Files/CMake/share/cmake-3.22/Modules/CheckCXXCompilerFlag.cmake
+C:/Program Files/CMake/share/cmake-3.22/Modules/CheckCXXSourceCompiles.cmake
+C:/Program Files/CMake/share/cmake-3.22/Modules/CheckIncludeFile.cmake
+C:/Program Files/CMake/share/cmake-3.22/Modules/CheckLibraryExists.cmake
+C:/Program Files/CMake/share/cmake-3.22/Modules/Compiler/CMakeCommonCompilerMacros.cmake
+C:/Program Files/CMake/share/cmake-3.22/Modules/Compiler/MSVC-C.cmake
+C:/Program Files/CMake/share/cmake-3.22/Modules/Compiler/MSVC-CXX.cmake
+C:/Program Files/CMake/share/cmake-3.22/Modules/ExternalData.cmake
+C:/Program Files/CMake/share/cmake-3.22/Modules/FindBoost.cmake
+C:/Program Files/CMake/share/cmake-3.22/Modules/FindCUDA.cmake
+C:/Program Files/CMake/share/cmake-3.22/Modules/FindCUDA/select_compute_arch.cmake
+C:/Program Files/CMake/share/cmake-3.22/Modules/FindPackageHandleStandardArgs.cmake
+C:/Program Files/CMake/share/cmake-3.22/Modules/FindPackageMessage.cmake
+C:/Program Files/CMake/share/cmake-3.22/Modules/FindPkgConfig.cmake
+C:/Program Files/CMake/share/cmake-3.22/Modules/FindThreads.cmake
+C:/Program Files/CMake/share/cmake-3.22/Modules/GenerateExportHeader.cmake
+C:/Program Files/CMake/share/cmake-3.22/Modules/Internal/CheckCompilerFlag.cmake
+C:/Program Files/CMake/share/cmake-3.22/Modules/Internal/CheckSourceCompiles.cmake
+C:/Program Files/CMake/share/cmake-3.22/Modules/Platform/Windows-MSVC-C.cmake
+C:/Program Files/CMake/share/cmake-3.22/Modules/Platform/Windows-MSVC-CXX.cmake
+C:/Program Files/CMake/share/cmake-3.22/Modules/Platform/Windows-MSVC.cmake
+C:/Program Files/CMake/share/cmake-3.22/Modules/Platform/Windows.cmake
+C:/Program Files/CMake/share/cmake-3.22/Modules/Platform/WindowsPaths.cmake
+D:/Program Files/PCL 1.12.0/3rdParty/VTK/lib/cmake/vtk-9.0/VTK-targets-debug.cmake
+D:/Program Files/PCL 1.12.0/3rdParty/VTK/lib/cmake/vtk-9.0/VTK-targets-release.cmake
+D:/Program Files/PCL 1.12.0/3rdParty/VTK/lib/cmake/vtk-9.0/VTK-targets.cmake
+D:/Program Files/PCL 1.12.0/3rdParty/VTK/lib/cmake/vtk-9.0/VTK-vtk-module-find-packages.cmake
+D:/Program Files/PCL 1.12.0/3rdParty/VTK/lib/cmake/vtk-9.0/VTK-vtk-module-properties.cmake
+D:/Program Files/PCL 1.12.0/3rdParty/VTK/lib/cmake/vtk-9.0/patches/99/FindOpenGL.cmake
+D:/Program Files/PCL 1.12.0/3rdParty/VTK/lib/cmake/vtk-9.0/vtk-config-version.cmake
+D:/Program Files/PCL 1.12.0/3rdParty/VTK/lib/cmake/vtk-9.0/vtk-config.cmake
+D:/Program Files/PCL 1.12.0/3rdParty/VTK/lib/cmake/vtk-9.0/vtk-prefix.cmake
+D:/Program Files/PCL 1.12.0/3rdParty/VTK/lib/cmake/vtk-9.0/vtk-use-file-deprecated.cmake
+D:/Program Files/PCL 1.12.0/3rdParty/VTK/lib/cmake/vtk-9.0/vtkCMakeBackports.cmake
+D:/Program Files/PCL 1.12.0/3rdParty/VTK/lib/cmake/vtk-9.0/vtkEncodeString.cmake
+D:/Program Files/PCL 1.12.0/3rdParty/VTK/lib/cmake/vtk-9.0/vtkHashSource.cmake
+D:/Program Files/PCL 1.12.0/3rdParty/VTK/lib/cmake/vtk-9.0/vtkModule.cmake
+D:/Program Files/PCL 1.12.0/3rdParty/VTK/lib/cmake/vtk-9.0/vtkModuleJson.cmake
+D:/Program Files/PCL 1.12.0/3rdParty/VTK/lib/cmake/vtk-9.0/vtkModuleTesting.cmake
+D:/Program Files/PCL 1.12.0/3rdParty/VTK/lib/cmake/vtk-9.0/vtkObjectFactory.cmake
+D:/Program Files/PCL 1.12.0/3rdParty/VTK/lib/cmake/vtk-9.0/vtkTopologicalSort.cmake
+D:/Program Files/PCL 1.12.0/cmake/Modules/FindEigen.cmake
+D:/Program Files/PCL 1.12.0/cmake/Modules/FindFLANN.cmake
+D:/Program Files/PCL 1.12.0/cmake/Modules/FindOpenNI2.cmake
+D:/Program Files/PCL 1.12.0/cmake/Modules/FindQhull.cmake
+D:/Program Files/PCL 1.12.0/cmake/PCLConfig.cmake
+D:/Program Files/PCL 1.12.0/cmake/PCLConfigVersion.cmake
+D:/REPO/zed-pcl/sample/CMakeLists.txt
+D:/REPO/zed-pcl/sample/build/CMakeFiles/3.22.1/CMakeCCompiler.cmake
+D:/REPO/zed-pcl/sample/build/CMakeFiles/3.22.1/CMakeCXXCompiler.cmake
+D:/REPO/zed-pcl/sample/build/CMakeFiles/3.22.1/CMakeRCCompiler.cmake
+D:/REPO/zed-pcl/sample/build/CMakeFiles/3.22.1/CMakeSystem.cmake

@@ -1,0 +1,10 @@
+^D:\REPO\ZED-PCL\SAMPLE\BUILD\CMAKEFILES\33D964AF9C79C374CEBCE620DEF427B4\GENERATE.STAMP.RULE
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SD:/REPO/zed-pcl/sample -BD:/REPO/zed-pcl/sample/build --check-stamp-list CMakeFiles/generate.stamp.list --vs-solution-file D:/REPO/zed-pcl/sample/build/ZED_with_PCL.sln
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd

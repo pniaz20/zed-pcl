@@ -1,0 +1,333 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <PreferredToolArchitecture>x64</PreferredToolArchitecture>
+  </PropertyGroup>
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="MinSizeRel|x64">
+      <Configuration>MinSizeRel</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="RelWithDebInfo|x64">
+      <Configuration>RelWithDebInfo</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{4C1CDDE9-EA37-3811-B0C8-A069338FF2D6}</ProjectGuid>
+    <WindowsTargetPlatformVersion>10.0.19041.0</WindowsTargetPlatformVersion>
+    <Keyword>Win32Proj</Keyword>
+    <Platform>x64</Platform>
+    <ProjectName>ZED_with_PCL</ProjectName>
+    <VCProjectUpgraderObjectName>NoUpgrade</VCProjectUpgraderObjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\REPO\zed-pcl\sample\build\Debug\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">ZED_with_PCL.dir\Debug\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">ZED_with_PCL</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">.exe</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</GenerateManifest>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\REPO\zed-pcl\sample\build\Release\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">ZED_with_PCL.dir\Release\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|x64'">ZED_with_PCL</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Release|x64'">.exe</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</GenerateManifest>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\REPO\zed-pcl\sample\build\MinSizeRel\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">ZED_with_PCL.dir\MinSizeRel\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">ZED_with_PCL</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">.exe</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">true</GenerateManifest>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\REPO\zed-pcl\sample\build\RelWithDebInfo\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">ZED_with_PCL.dir\RelWithDebInfo\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">ZED_with_PCL</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">.exe</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">true</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">true</GenerateManifest>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v11.5\include;C:\Program Files (x86)\ZED SDK\include;D:\REPO\zed-pcl\sample\include;D:\Program Files\PCL 1.12.0\include\pcl-1.12;D:\Program Files\PCL 1.12.0\3rdParty\Eigen\eigen3;D:\Program Files\PCL 1.12.0\3rdParty\Boost\include\boost-1_76;C:\Program Files\OpenNI2\Include;D:\Program Files\PCL 1.12.0\3rdParty\Qhull\include;D:\Program Files\PCL 1.12.0\3rdParty\VTK\include\vtk-9.0;D:\Program Files\PCL 1.12.0\3rdParty\FLANN\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>%(AdditionalOptions) -std=c++14 -g -O3</AdditionalOptions>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>Disabled</InlineFunctionExpansion>
+      <Optimization>Disabled</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;__SSE4_2__;__SSE4_1__;__SSSE3__;__SSE3__;__SSE2__;__SSE__;BOOST_ALL_NO_LIB;CMAKE_INTDIR="Debug"</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_DEBUG;_WINDOWS;__SSE4_2__;__SSE4_1__;__SSSE3__;__SSE3__;__SSE2__;__SSE__;BOOST_ALL_NO_LIB;CMAKE_INTDIR=\"Debug\"</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v11.5\include;C:\Program Files (x86)\ZED SDK\include;D:\REPO\zed-pcl\sample\include;D:\Program Files\PCL 1.12.0\include\pcl-1.12;D:\Program Files\PCL 1.12.0\3rdParty\Eigen\eigen3;D:\Program Files\PCL 1.12.0\3rdParty\Boost\include\boost-1_76;C:\Program Files\OpenNI2\Include;D:\Program Files\PCL 1.12.0\3rdParty\Qhull\include;D:\Program Files\PCL 1.12.0\3rdParty\VTK\include\vtk-9.0;D:\Program Files\PCL 1.12.0\3rdParty\FLANN\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v11.5\include;C:\Program Files (x86)\ZED SDK\include;D:\REPO\zed-pcl\sample\include;D:\Program Files\PCL 1.12.0\include\pcl-1.12;D:\Program Files\PCL 1.12.0\3rdParty\Eigen\eigen3;D:\Program Files\PCL 1.12.0\3rdParty\Boost\include\boost-1_76;C:\Program Files\OpenNI2\Include;D:\Program Files\PCL 1.12.0\3rdParty\Qhull\include;D:\Program Files\PCL 1.12.0\3rdParty\VTK\include\vtk-9.0;D:\Program Files\PCL 1.12.0\3rdParty\FLANN\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalDependencies>C:\Program Files (x86)\ZED SDK\lib\sl_zed64.lib;C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v11.5\lib\x64\cuda.lib;C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v11.5\lib\x64\cudart.lib;D:\Program Files\PCL 1.12.0\lib\pcl_surfaced.lib;D:\Program Files\PCL 1.12.0\lib\pcl_keypointsd.lib;D:\Program Files\PCL 1.12.0\lib\pcl_trackingd.lib;D:\Program Files\PCL 1.12.0\lib\pcl_recognitiond.lib;D:\Program Files\PCL 1.12.0\lib\pcl_stereod.lib;D:\Program Files\PCL 1.12.0\lib\pcl_outofcored.lib;D:\Program Files\PCL 1.12.0\lib\pcl_peopled.lib;D:\Program Files\PCL 1.12.0\3rdParty\Boost\lib\libboost_system-vc142-mt-gd-x64-1_76.lib;D:\Program Files\PCL 1.12.0\3rdParty\Boost\lib\libboost_filesystem-vc142-mt-gd-x64-1_76.lib;D:\Program Files\PCL 1.12.0\3rdParty\Boost\lib\libboost_date_time-vc142-mt-gd-x64-1_76.lib;D:\Program Files\PCL 1.12.0\3rdParty\Boost\lib\libboost_iostreams-vc142-mt-gd-x64-1_76.lib;D:\Program Files\PCL 1.12.0\3rdParty\Boost\lib\libboost_serialization-vc142-mt-gd-x64-1_76.lib;D:\Program Files\PCL 1.12.0\3rdParty\Boost\lib\libboost_regex-vc142-mt-gd-x64-1_76.lib;D:\Program Files\PCL 1.12.0\3rdParty\Qhull\lib\qhullstatic_rd.lib;C:\Program Files\OpenNI2\Lib\OpenNI2.lib;D:\Program Files\PCL 1.12.0\3rdParty\VTK\lib\vtkChartsCore-9.0d.lib;D:\Program Files\PCL 1.12.0\3rdParty\VTK\lib\vtkIOGeometry-9.0d.lib;D:\Program Files\PCL 1.12.0\3rdParty\VTK\lib\vtkIOPLY-9.0d.lib;D:\Program Files\PCL 1.12.0\3rdParty\VTK\lib\vtkRenderingLOD-9.0d.lib;D:\Program Files\PCL 1.12.0\3rdParty\VTK\lib\vtkViewsContext2D-9.0d.lib;D:\Program Files\PCL 1.12.0\3rdParty\VTK\lib\vtkRenderingOpenGL2-9.0d.lib;D:\Program Files\PCL 1.12.0\3rdParty\FLANN\lib\flann_cpp_s.lib;D:\Program Files\PCL 1.12.0\lib\pcl_registrationd.lib;D:\Program Files\PCL 1.12.0\lib\pcl_segmentationd.lib;D:\Program Files\PCL 1.12.0\lib\pcl_featuresd.lib;D:\Program Files\PCL 1.12.0\lib\pcl_filtersd.lib;D:\Program Files\PCL 1.12.0\lib\pcl_sample_consensusd.lib;D:\Program Files\PCL 1.12.0\lib\pcl_mld.lib;D:\Program Files\PCL 1.12.0\lib\pcl_visualizationd.lib;D:\Program Files\PCL 1.12.0\lib\pcl_searchd.lib;D:\Program Files\PCL 1.12.0\lib\pcl_kdtreed.lib;D:\Program Files\PCL 1.12.0\lib\pcl_iod.lib;D:\Program Files\PCL 1.12.0\lib\pcl_octreed.lib;D:\Program Files\PCL 1.12.0\lib\pcl_commond.lib;D:\Program Files\PCL 1.12.0\3rdParty\VTK\lib\vtkRenderingContext2D-9.0d.lib;D:\Program Files\PCL 1.12.0\3rdParty\VTK\lib\vtkViewsCore-9.0d.lib;D:\Program Files\PCL 1.12.0\3rdParty\VTK\lib\vtkInteractionWidgets-9.0d.lib;D:\Program Files\PCL 1.12.0\3rdParty\VTK\lib\vtkFiltersModeling-9.0d.lib;D:\Program Files\PCL 1.12.0\3rdParty\VTK\lib\vtkInteractionStyle-9.0d.lib;D:\Program Files\PCL 1.12.0\3rdParty\VTK\lib\vtkFiltersExtraction-9.0d.lib;D:\Program Files\PCL 1.12.0\3rdParty\VTK\lib\vtkIOLegacy-9.0d.lib;D:\Program Files\PCL 1.12.0\3rdParty\VTK\lib\vtkIOCore-9.0d.lib;D:\Program Files\PCL 1.12.0\3rdParty\VTK\lib\vtkRenderingAnnotation-9.0d.lib;D:\Program Files\PCL 1.12.0\3rdParty\VTK\lib\vtkRenderingFreeType-9.0d.lib;D:\Program Files\PCL 1.12.0\3rdParty\VTK\lib\vtkfreetype-9.0d.lib;D:\Program Files\PCL 1.12.0\3rdParty\VTK\lib\vtkImagingSources-9.0d.lib;D:\Program Files\PCL 1.12.0\3rdParty\VTK\lib\vtkIOImage-9.0d.lib;D:\Program Files\PCL 1.12.0\3rdParty\VTK\lib\vtkzlib-9.0d.lib;D:\Program Files\PCL 1.12.0\3rdParty\VTK\lib\vtkImagingCore-9.0d.lib;D:\Program Files\PCL 1.12.0\3rdParty\VTK\lib\vtkRenderingUI-9.0d.lib;D:\Program Files\PCL 1.12.0\3rdParty\VTK\lib\vtkRenderingCore-9.0d.lib;D:\Program Files\PCL 1.12.0\3rdParty\VTK\lib\vtkCommonColor-9.0d.lib;D:\Program Files\PCL 1.12.0\3rdParty\VTK\lib\vtkFiltersGeometry-9.0d.lib;D:\Program Files\PCL 1.12.0\3rdParty\VTK\lib\vtkFiltersSources-9.0d.lib;D:\Program Files\PCL 1.12.0\3rdParty\VTK\lib\vtkFiltersGeneral-9.0d.lib;D:\Program Files\PCL 1.12.0\3rdParty\VTK\lib\vtkCommonComputationalGeometry-9.0d.lib;D:\Program Files\PCL 1.12.0\3rdParty\VTK\lib\vtkFiltersCore-9.0d.lib;D:\Program Files\PCL 1.12.0\3rdParty\VTK\lib\vtkCommonExecutionModel-9.0d.lib;D:\Program Files\PCL 1.12.0\3rdParty\VTK\lib\vtkCommonDataModel-9.0d.lib;D:\Program Files\PCL 1.12.0\3rdParty\VTK\lib\vtkCommonMisc-9.0d.lib;D:\Program Files\PCL 1.12.0\3rdParty\VTK\lib\vtkCommonTransforms-9.0d.lib;D:\Program Files\PCL 1.12.0\3rdParty\VTK\lib\vtkCommonMath-9.0d.lib;D:\Program Files\PCL 1.12.0\3rdParty\VTK\lib\vtkglew-9.0d.lib;opengl32.lib;D:\Program Files\PCL 1.12.0\3rdParty\VTK\lib\vtkCommonCore-9.0d.lib;D:\Program Files\PCL 1.12.0\3rdParty\VTK\lib\vtksys-9.0d.lib;ws2_32.lib;dbghelp.lib;psapi.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>C:/Program Files (x86)/ZED SDK/lib;C:/Program Files (x86)/ZED SDK/lib/$(Configuration);D:/Program Files/PCL 1.12.0/lib;D:/Program Files/PCL 1.12.0/lib/$(Configuration);%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>D:/REPO/zed-pcl/sample/build/Debug/ZED_with_PCL.lib</ImportLibrary>
+      <ProgramDataBaseFile>D:/REPO/zed-pcl/sample/build/Debug/ZED_with_PCL.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v11.5\include;C:\Program Files (x86)\ZED SDK\include;D:\REPO\zed-pcl\sample\include;D:\Program Files\PCL 1.12.0\include\pcl-1.12;D:\Program Files\PCL 1.12.0\3rdParty\Eigen\eigen3;D:\Program Files\PCL 1.12.0\3rdParty\Boost\include\boost-1_76;C:\Program Files\OpenNI2\Include;D:\Program Files\PCL 1.12.0\3rdParty\Qhull\include;D:\Program Files\PCL 1.12.0\3rdParty\VTK\include\vtk-9.0;D:\Program Files\PCL 1.12.0\3rdParty\FLANN\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>%(AdditionalOptions) -std=c++14 -g -O3</AdditionalOptions>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;__SSE4_2__;__SSE4_1__;__SSSE3__;__SSE3__;__SSE2__;__SSE__;BOOST_ALL_NO_LIB;CMAKE_INTDIR="Release"</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;__SSE4_2__;__SSE4_1__;__SSSE3__;__SSE3__;__SSE2__;__SSE__;BOOST_ALL_NO_LIB;CMAKE_INTDIR=\"Release\"</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v11.5\include;C:\Program Files (x86)\ZED SDK\include;D:\REPO\zed-pcl\sample\include;D:\Program Files\PCL 1.12.0\include\pcl-1.12;D:\Program Files\PCL 1.12.0\3rdParty\Eigen\eigen3;D:\Program Files\PCL 1.12.0\3rdParty\Boost\include\boost-1_76;C:\Program Files\OpenNI2\Include;D:\Program Files\PCL 1.12.0\3rdParty\Qhull\include;D:\Program Files\PCL 1.12.0\3rdParty\VTK\include\vtk-9.0;D:\Program Files\PCL 1.12.0\3rdParty\FLANN\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v11.5\include;C:\Program Files (x86)\ZED SDK\include;D:\REPO\zed-pcl\sample\include;D:\Program Files\PCL 1.12.0\include\pcl-1.12;D:\Program Files\PCL 1.12.0\3rdParty\Eigen\eigen3;D:\Program Files\PCL 1.12.0\3rdParty\Boost\include\boost-1_76;C:\Program Files\OpenNI2\Include;D:\Program Files\PCL 1.12.0\3rdParty\Qhull\include;D:\Program Files\PCL 1.12.0\3rdParty\VTK\include\vtk-9.0;D:\Program Files\PCL 1.12.0\3rdParty\FLANN\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalDependencies>C:\Program Files (x86)\ZED SDK\lib\sl_zed64.lib;C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v11.5\lib\x64\cuda.lib;C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v11.5\lib\x64\cudart.lib;D:\Program Files\PCL 1.12.0\lib\pcl_surface.lib;D:\Program Files\PCL 1.12.0\lib\pcl_keypoints.lib;D:\Program Files\PCL 1.12.0\lib\pcl_tracking.lib;D:\Program Files\PCL 1.12.0\lib\pcl_recognition.lib;D:\Program Files\PCL 1.12.0\lib\pcl_stereo.lib;D:\Program Files\PCL 1.12.0\lib\pcl_outofcore.lib;D:\Program Files\PCL 1.12.0\lib\pcl_people.lib;D:\Program Files\PCL 1.12.0\3rdParty\Boost\lib\libboost_system-vc142-mt-x64-1_76.lib;D:\Program Files\PCL 1.12.0\3rdParty\Boost\lib\libboost_filesystem-vc142-mt-x64-1_76.lib;D:\Program Files\PCL 1.12.0\3rdParty\Boost\lib\libboost_date_time-vc142-mt-x64-1_76.lib;D:\Program Files\PCL 1.12.0\3rdParty\Boost\lib\libboost_iostreams-vc142-mt-x64-1_76.lib;D:\Program Files\PCL 1.12.0\3rdParty\Boost\lib\libboost_serialization-vc142-mt-x64-1_76.lib;D:\Program Files\PCL 1.12.0\3rdParty\Boost\lib\libboost_regex-vc142-mt-x64-1_76.lib;D:\Program Files\PCL 1.12.0\3rdParty\Qhull\lib\qhullstatic_r.lib;C:\Program Files\OpenNI2\Lib\OpenNI2.lib;D:\Program Files\PCL 1.12.0\3rdParty\VTK\lib\vtkChartsCore-9.0.lib;D:\Program Files\PCL 1.12.0\3rdParty\VTK\lib\vtkIOGeometry-9.0.lib;D:\Program Files\PCL 1.12.0\3rdParty\VTK\lib\vtkIOPLY-9.0.lib;D:\Program Files\PCL 1.12.0\3rdParty\VTK\lib\vtkRenderingLOD-9.0.lib;D:\Program Files\PCL 1.12.0\3rdParty\VTK\lib\vtkViewsContext2D-9.0.lib;D:\Program Files\PCL 1.12.0\3rdParty\VTK\lib\vtkRenderingOpenGL2-9.0.lib;D:\Program Files\PCL 1.12.0\3rdParty\FLANN\lib\flann_cpp_s.lib;D:\Program Files\PCL 1.12.0\lib\pcl_registration.lib;D:\Program Files\PCL 1.12.0\lib\pcl_segmentation.lib;D:\Program Files\PCL 1.12.0\lib\pcl_features.lib;D:\Program Files\PCL 1.12.0\lib\pcl_filters.lib;D:\Program Files\PCL 1.12.0\lib\pcl_sample_consensus.lib;D:\Program Files\PCL 1.12.0\lib\pcl_ml.lib;D:\Program Files\PCL 1.12.0\lib\pcl_visualization.lib;D:\Program Files\PCL 1.12.0\lib\pcl_search.lib;D:\Program Files\PCL 1.12.0\lib\pcl_kdtree.lib;D:\Program Files\PCL 1.12.0\lib\pcl_io.lib;D:\Program Files\PCL 1.12.0\lib\pcl_octree.lib;D:\Program Files\PCL 1.12.0\lib\pcl_common.lib;D:\Program Files\PCL 1.12.0\3rdParty\VTK\lib\vtkRenderingContext2D-9.0.lib;D:\Program Files\PCL 1.12.0\3rdParty\VTK\lib\vtkViewsCore-9.0.lib;D:\Program Files\PCL 1.12.0\3rdParty\VTK\lib\vtkInteractionWidgets-9.0.lib;D:\Program Files\PCL 1.12.0\3rdParty\VTK\lib\vtkFiltersModeling-9.0.lib;D:\Program Files\PCL 1.12.0\3rdParty\VTK\lib\vtkInteractionStyle-9.0.lib;D:\Program Files\PCL 1.12.0\3rdParty\VTK\lib\vtkFiltersExtraction-9.0.lib;D:\Program Files\PCL 1.12.0\3rdParty\VTK\lib\vtkIOLegacy-9.0.lib;D:\Program Files\PCL 1.12.0\3rdParty\VTK\lib\vtkIOCore-9.0.lib;D:\Program Files\PCL 1.12.0\3rdParty\VTK\lib\vtkRenderingAnnotation-9.0.lib;D:\Program Files\PCL 1.12.0\3rdParty\VTK\lib\vtkRenderingFreeType-9.0.lib;D:\Program Files\PCL 1.12.0\3rdParty\VTK\lib\vtkfreetype-9.0.lib;D:\Program Files\PCL 1.12.0\3rdParty\VTK\lib\vtkImagingSources-9.0.lib;D:\Program Files\PCL 1.12.0\3rdParty\VTK\lib\vtkIOImage-9.0.lib;D:\Program Files\PCL 1.12.0\3rdParty\VTK\lib\vtkzlib-9.0.lib;D:\Program Files\PCL 1.12.0\3rdParty\VTK\lib\vtkImagingCore-9.0.lib;D:\Program Files\PCL 1.12.0\3rdParty\VTK\lib\vtkRenderingUI-9.0.lib;D:\Program Files\PCL 1.12.0\3rdParty\VTK\lib\vtkRenderingCore-9.0.lib;D:\Program Files\PCL 1.12.0\3rdParty\VTK\lib\vtkCommonColor-9.0.lib;D:\Program Files\PCL 1.12.0\3rdParty\VTK\lib\vtkFiltersGeometry-9.0.lib;D:\Program Files\PCL 1.12.0\3rdParty\VTK\lib\vtkFiltersSources-9.0.lib;D:\Program Files\PCL 1.12.0\3rdParty\VTK\lib\vtkFiltersGeneral-9.0.lib;D:\Program Files\PCL 1.12.0\3rdParty\VTK\lib\vtkCommonComputationalGeometry-9.0.lib;D:\Program Files\PCL 1.12.0\3rdParty\VTK\lib\vtkFiltersCore-9.0.lib;D:\Program Files\PCL 1.12.0\3rdParty\VTK\lib\vtkCommonExecutionModel-9.0.lib;D:\Program Files\PCL 1.12.0\3rdParty\VTK\lib\vtkCommonDataModel-9.0.lib;D:\Program Files\PCL 1.12.0\3rdParty\VTK\lib\vtkCommonMisc-9.0.lib;D:\Program Files\PCL 1.12.0\3rdParty\VTK\lib\vtkCommonTransforms-9.0.lib;D:\Program Files\PCL 1.12.0\3rdParty\VTK\lib\vtkCommonMath-9.0.lib;D:\Program Files\PCL 1.12.0\3rdParty\VTK\lib\vtkglew-9.0.lib;opengl32.lib;D:\Program Files\PCL 1.12.0\3rdParty\VTK\lib\vtkCommonCore-9.0.lib;D:\Program Files\PCL 1.12.0\3rdParty\VTK\lib\vtksys-9.0.lib;ws2_32.lib;dbghelp.lib;psapi.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>C:/Program Files (x86)/ZED SDK/lib;C:/Program Files (x86)/ZED SDK/lib/$(Configuration);D:/Program Files/PCL 1.12.0/lib;D:/Program Files/PCL 1.12.0/lib/$(Configuration);%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>D:/REPO/zed-pcl/sample/build/Release/ZED_with_PCL.lib</ImportLibrary>
+      <ProgramDataBaseFile>D:/REPO/zed-pcl/sample/build/Release/ZED_with_PCL.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v11.5\include;C:\Program Files (x86)\ZED SDK\include;D:\REPO\zed-pcl\sample\include;D:\Program Files\PCL 1.12.0\include\pcl-1.12;D:\Program Files\PCL 1.12.0\3rdParty\Eigen\eigen3;D:\Program Files\PCL 1.12.0\3rdParty\Boost\include\boost-1_76;C:\Program Files\OpenNI2\Include;D:\Program Files\PCL 1.12.0\3rdParty\Qhull\include;D:\Program Files\PCL 1.12.0\3rdParty\VTK\include\vtk-9.0;D:\Program Files\PCL 1.12.0\3rdParty\FLANN\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>%(AdditionalOptions) -std=c++14 -g -O3</AdditionalOptions>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <Optimization>MinSpace</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;__SSE4_2__;__SSE4_1__;__SSSE3__;__SSE3__;__SSE2__;__SSE__;BOOST_ALL_NO_LIB;CMAKE_INTDIR="MinSizeRel"</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;__SSE4_2__;__SSE4_1__;__SSSE3__;__SSE3__;__SSE2__;__SSE__;BOOST_ALL_NO_LIB;CMAKE_INTDIR=\"MinSizeRel\"</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v11.5\include;C:\Program Files (x86)\ZED SDK\include;D:\REPO\zed-pcl\sample\include;D:\Program Files\PCL 1.12.0\include\pcl-1.12;D:\Program Files\PCL 1.12.0\3rdParty\Eigen\eigen3;D:\Program Files\PCL 1.12.0\3rdParty\Boost\include\boost-1_76;C:\Program Files\OpenNI2\Include;D:\Program Files\PCL 1.12.0\3rdParty\Qhull\include;D:\Program Files\PCL 1.12.0\3rdParty\VTK\include\vtk-9.0;D:\Program Files\PCL 1.12.0\3rdParty\FLANN\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v11.5\include;C:\Program Files (x86)\ZED SDK\include;D:\REPO\zed-pcl\sample\include;D:\Program Files\PCL 1.12.0\include\pcl-1.12;D:\Program Files\PCL 1.12.0\3rdParty\Eigen\eigen3;D:\Program Files\PCL 1.12.0\3rdParty\Boost\include\boost-1_76;C:\Program Files\OpenNI2\Include;D:\Program Files\PCL 1.12.0\3rdParty\Qhull\include;D:\Program Files\PCL 1.12.0\3rdParty\VTK\include\vtk-9.0;D:\Program Files\PCL 1.12.0\3rdParty\FLANN\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalDependencies>C:\Program Files (x86)\ZED SDK\lib\sl_zed64.lib;C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v11.5\lib\x64\cuda.lib;C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v11.5\lib\x64\cudart.lib;D:\Program Files\PCL 1.12.0\lib\pcl_surface.lib;D:\Program Files\PCL 1.12.0\lib\pcl_keypoints.lib;D:\Program Files\PCL 1.12.0\lib\pcl_tracking.lib;D:\Program Files\PCL 1.12.0\lib\pcl_recognition.lib;D:\Program Files\PCL 1.12.0\lib\pcl_stereo.lib;D:\Program Files\PCL 1.12.0\lib\pcl_outofcore.lib;D:\Program Files\PCL 1.12.0\lib\pcl_people.lib;D:\Program Files\PCL 1.12.0\3rdParty\Boost\lib\libboost_system-vc142-mt-x64-1_76.lib;D:\Program Files\PCL 1.12.0\3rdParty\Boost\lib\libboost_filesystem-vc142-mt-x64-1_76.lib;D:\Program Files\PCL 1.12.0\3rdParty\Boost\lib\libboost_date_time-vc142-mt-x64-1_76.lib;D:\Program Files\PCL 1.12.0\3rdParty\Boost\lib\libboost_iostreams-vc142-mt-x64-1_76.lib;D:\Program Files\PCL 1.12.0\3rdParty\Boost\lib\libboost_serialization-vc142-mt-x64-1_76.lib;D:\Program Files\PCL 1.12.0\3rdParty\Boost\lib\libboost_regex-vc142-mt-x64-1_76.lib;D:\Program Files\PCL 1.12.0\3rdParty\Qhull\lib\qhullstatic_r.lib;C:\Program Files\OpenNI2\Lib\OpenNI2.lib;D:\Program Files\PCL 1.12.0\3rdParty\VTK\lib\vtkChartsCore-9.0d.lib;D:\Program Files\PCL 1.12.0\3rdParty\VTK\lib\vtkIOGeometry-9.0d.lib;D:\Program Files\PCL 1.12.0\3rdParty\VTK\lib\vtkIOPLY-9.0d.lib;D:\Program Files\PCL 1.12.0\3rdParty\VTK\lib\vtkRenderingLOD-9.0d.lib;D:\Program Files\PCL 1.12.0\3rdParty\VTK\lib\vtkViewsContext2D-9.0d.lib;D:\Program Files\PCL 1.12.0\3rdParty\VTK\lib\vtkRenderingOpenGL2-9.0d.lib;D:\Program Files\PCL 1.12.0\3rdParty\FLANN\lib\flann_cpp_s.lib;D:\Program Files\PCL 1.12.0\lib\pcl_registration.lib;D:\Program Files\PCL 1.12.0\lib\pcl_segmentation.lib;D:\Program Files\PCL 1.12.0\lib\pcl_features.lib;D:\Program Files\PCL 1.12.0\lib\pcl_filters.lib;D:\Program Files\PCL 1.12.0\lib\pcl_sample_consensus.lib;D:\Program Files\PCL 1.12.0\lib\pcl_ml.lib;D:\Program Files\PCL 1.12.0\lib\pcl_visualization.lib;D:\Program Files\PCL 1.12.0\lib\pcl_search.lib;D:\Program Files\PCL 1.12.0\lib\pcl_kdtree.lib;D:\Program Files\PCL 1.12.0\lib\pcl_io.lib;D:\Program Files\PCL 1.12.0\lib\pcl_octree.lib;D:\Program Files\PCL 1.12.0\lib\pcl_common.lib;D:\Program Files\PCL 1.12.0\3rdParty\VTK\lib\vtkRenderingContext2D-9.0d.lib;D:\Program Files\PCL 1.12.0\3rdParty\VTK\lib\vtkViewsCore-9.0d.lib;D:\Program Files\PCL 1.12.0\3rdParty\VTK\lib\vtkInteractionWidgets-9.0d.lib;D:\Program Files\PCL 1.12.0\3rdParty\VTK\lib\vtkFiltersModeling-9.0d.lib;D:\Program Files\PCL 1.12.0\3rdParty\VTK\lib\vtkInteractionStyle-9.0d.lib;D:\Program Files\PCL 1.12.0\3rdParty\VTK\lib\vtkFiltersExtraction-9.0d.lib;D:\Program Files\PCL 1.12.0\3rdParty\VTK\lib\vtkIOLegacy-9.0d.lib;D:\Program Files\PCL 1.12.0\3rdParty\VTK\lib\vtkIOCore-9.0d.lib;D:\Program Files\PCL 1.12.0\3rdParty\VTK\lib\vtkRenderingAnnotation-9.0d.lib;D:\Program Files\PCL 1.12.0\3rdParty\VTK\lib\vtkRenderingFreeType-9.0d.lib;D:\Program Files\PCL 1.12.0\3rdParty\VTK\lib\vtkfreetype-9.0d.lib;D:\Program Files\PCL 1.12.0\3rdParty\VTK\lib\vtkImagingSources-9.0d.lib;D:\Program Files\PCL 1.12.0\3rdParty\VTK\lib\vtkIOImage-9.0d.lib;D:\Program Files\PCL 1.12.0\3rdParty\VTK\lib\vtkzlib-9.0d.lib;D:\Program Files\PCL 1.12.0\3rdParty\VTK\lib\vtkImagingCore-9.0d.lib;D:\Program Files\PCL 1.12.0\3rdParty\VTK\lib\vtkRenderingUI-9.0d.lib;D:\Program Files\PCL 1.12.0\3rdParty\VTK\lib\vtkRenderingCore-9.0d.lib;D:\Program Files\PCL 1.12.0\3rdParty\VTK\lib\vtkCommonColor-9.0d.lib;D:\Program Files\PCL 1.12.0\3rdParty\VTK\lib\vtkFiltersGeometry-9.0d.lib;D:\Program Files\PCL 1.12.0\3rdParty\VTK\lib\vtkFiltersSources-9.0d.lib;D:\Program Files\PCL 1.12.0\3rdParty\VTK\lib\vtkFiltersGeneral-9.0d.lib;D:\Program Files\PCL 1.12.0\3rdParty\VTK\lib\vtkCommonComputationalGeometry-9.0d.lib;D:\Program Files\PCL 1.12.0\3rdParty\VTK\lib\vtkFiltersCore-9.0d.lib;D:\Program Files\PCL 1.12.0\3rdParty\VTK\lib\vtkCommonExecutionModel-9.0d.lib;D:\Program Files\PCL 1.12.0\3rdParty\VTK\lib\vtkCommonDataModel-9.0d.lib;D:\Program Files\PCL 1.12.0\3rdParty\VTK\lib\vtkCommonMisc-9.0d.lib;D:\Program Files\PCL 1.12.0\3rdParty\VTK\lib\vtkCommonTransforms-9.0d.lib;D:\Program Files\PCL 1.12.0\3rdParty\VTK\lib\vtkCommonMath-9.0d.lib;D:\Program Files\PCL 1.12.0\3rdParty\VTK\lib\vtkglew-9.0d.lib;opengl32.lib;D:\Program Files\PCL 1.12.0\3rdParty\VTK\lib\vtkCommonCore-9.0d.lib;D:\Program Files\PCL 1.12.0\3rdParty\VTK\lib\vtksys-9.0d.lib;ws2_32.lib;dbghelp.lib;psapi.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>C:/Program Files (x86)/ZED SDK/lib;C:/Program Files (x86)/ZED SDK/lib/$(Configuration);D:/Program Files/PCL 1.12.0/lib;D:/Program Files/PCL 1.12.0/lib/$(Configuration);%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>D:/REPO/zed-pcl/sample/build/MinSizeRel/ZED_with_PCL.lib</ImportLibrary>
+      <ProgramDataBaseFile>D:/REPO/zed-pcl/sample/build/MinSizeRel/ZED_with_PCL.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v11.5\include;C:\Program Files (x86)\ZED SDK\include;D:\REPO\zed-pcl\sample\include;D:\Program Files\PCL 1.12.0\include\pcl-1.12;D:\Program Files\PCL 1.12.0\3rdParty\Eigen\eigen3;D:\Program Files\PCL 1.12.0\3rdParty\Boost\include\boost-1_76;C:\Program Files\OpenNI2\Include;D:\Program Files\PCL 1.12.0\3rdParty\Qhull\include;D:\Program Files\PCL 1.12.0\3rdParty\VTK\include\vtk-9.0;D:\Program Files\PCL 1.12.0\3rdParty\FLANN\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>%(AdditionalOptions) -std=c++14 -g -O3</AdditionalOptions>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;__SSE4_2__;__SSE4_1__;__SSSE3__;__SSE3__;__SSE2__;__SSE__;BOOST_ALL_NO_LIB;CMAKE_INTDIR="RelWithDebInfo"</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;__SSE4_2__;__SSE4_1__;__SSSE3__;__SSE3__;__SSE2__;__SSE__;BOOST_ALL_NO_LIB;CMAKE_INTDIR=\"RelWithDebInfo\"</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v11.5\include;C:\Program Files (x86)\ZED SDK\include;D:\REPO\zed-pcl\sample\include;D:\Program Files\PCL 1.12.0\include\pcl-1.12;D:\Program Files\PCL 1.12.0\3rdParty\Eigen\eigen3;D:\Program Files\PCL 1.12.0\3rdParty\Boost\include\boost-1_76;C:\Program Files\OpenNI2\Include;D:\Program Files\PCL 1.12.0\3rdParty\Qhull\include;D:\Program Files\PCL 1.12.0\3rdParty\VTK\include\vtk-9.0;D:\Program Files\PCL 1.12.0\3rdParty\FLANN\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v11.5\include;C:\Program Files (x86)\ZED SDK\include;D:\REPO\zed-pcl\sample\include;D:\Program Files\PCL 1.12.0\include\pcl-1.12;D:\Program Files\PCL 1.12.0\3rdParty\Eigen\eigen3;D:\Program Files\PCL 1.12.0\3rdParty\Boost\include\boost-1_76;C:\Program Files\OpenNI2\Include;D:\Program Files\PCL 1.12.0\3rdParty\Qhull\include;D:\Program Files\PCL 1.12.0\3rdParty\VTK\include\vtk-9.0;D:\Program Files\PCL 1.12.0\3rdParty\FLANN\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalDependencies>C:\Program Files (x86)\ZED SDK\lib\sl_zed64.lib;C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v11.5\lib\x64\cuda.lib;C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v11.5\lib\x64\cudart.lib;D:\Program Files\PCL 1.12.0\lib\pcl_surface.lib;D:\Program Files\PCL 1.12.0\lib\pcl_keypoints.lib;D:\Program Files\PCL 1.12.0\lib\pcl_tracking.lib;D:\Program Files\PCL 1.12.0\lib\pcl_recognition.lib;D:\Program Files\PCL 1.12.0\lib\pcl_stereo.lib;D:\Program Files\PCL 1.12.0\lib\pcl_outofcore.lib;D:\Program Files\PCL 1.12.0\lib\pcl_people.lib;D:\Program Files\PCL 1.12.0\3rdParty\Boost\lib\libboost_system-vc142-mt-x64-1_76.lib;D:\Program Files\PCL 1.12.0\3rdParty\Boost\lib\libboost_filesystem-vc142-mt-x64-1_76.lib;D:\Program Files\PCL 1.12.0\3rdParty\Boost\lib\libboost_date_time-vc142-mt-x64-1_76.lib;D:\Program Files\PCL 1.12.0\3rdParty\Boost\lib\libboost_iostreams-vc142-mt-x64-1_76.lib;D:\Program Files\PCL 1.12.0\3rdParty\Boost\lib\libboost_serialization-vc142-mt-x64-1_76.lib;D:\Program Files\PCL 1.12.0\3rdParty\Boost\lib\libboost_regex-vc142-mt-x64-1_76.lib;D:\Program Files\PCL 1.12.0\3rdParty\Qhull\lib\qhullstatic_r.lib;C:\Program Files\OpenNI2\Lib\OpenNI2.lib;D:\Program Files\PCL 1.12.0\3rdParty\VTK\lib\vtkChartsCore-9.0d.lib;D:\Program Files\PCL 1.12.0\3rdParty\VTK\lib\vtkIOGeometry-9.0d.lib;D:\Program Files\PCL 1.12.0\3rdParty\VTK\lib\vtkIOPLY-9.0d.lib;D:\Program Files\PCL 1.12.0\3rdParty\VTK\lib\vtkRenderingLOD-9.0d.lib;D:\Program Files\PCL 1.12.0\3rdParty\VTK\lib\vtkViewsContext2D-9.0d.lib;D:\Program Files\PCL 1.12.0\3rdParty\VTK\lib\vtkRenderingOpenGL2-9.0d.lib;D:\Program Files\PCL 1.12.0\3rdParty\FLANN\lib\flann_cpp_s.lib;D:\Program Files\PCL 1.12.0\lib\pcl_registration.lib;D:\Program Files\PCL 1.12.0\lib\pcl_segmentation.lib;D:\Program Files\PCL 1.12.0\lib\pcl_features.lib;D:\Program Files\PCL 1.12.0\lib\pcl_filters.lib;D:\Program Files\PCL 1.12.0\lib\pcl_sample_consensus.lib;D:\Program Files\PCL 1.12.0\lib\pcl_ml.lib;D:\Program Files\PCL 1.12.0\lib\pcl_visualization.lib;D:\Program Files\PCL 1.12.0\lib\pcl_search.lib;D:\Program Files\PCL 1.12.0\lib\pcl_kdtree.lib;D:\Program Files\PCL 1.12.0\lib\pcl_io.lib;D:\Program Files\PCL 1.12.0\lib\pcl_octree.lib;D:\Program Files\PCL 1.12.0\lib\pcl_common.lib;D:\Program Files\PCL 1.12.0\3rdParty\VTK\lib\vtkRenderingContext2D-9.0d.lib;D:\Program Files\PCL 1.12.0\3rdParty\VTK\lib\vtkViewsCore-9.0d.lib;D:\Program Files\PCL 1.12.0\3rdParty\VTK\lib\vtkInteractionWidgets-9.0d.lib;D:\Program Files\PCL 1.12.0\3rdParty\VTK\lib\vtkFiltersModeling-9.0d.lib;D:\Program Files\PCL 1.12.0\3rdParty\VTK\lib\vtkInteractionStyle-9.0d.lib;D:\Program Files\PCL 1.12.0\3rdParty\VTK\lib\vtkFiltersExtraction-9.0d.lib;D:\Program Files\PCL 1.12.0\3rdParty\VTK\lib\vtkIOLegacy-9.0d.lib;D:\Program Files\PCL 1.12.0\3rdParty\VTK\lib\vtkIOCore-9.0d.lib;D:\Program Files\PCL 1.12.0\3rdParty\VTK\lib\vtkRenderingAnnotation-9.0d.lib;D:\Program Files\PCL 1.12.0\3rdParty\VTK\lib\vtkRenderingFreeType-9.0d.lib;D:\Program Files\PCL 1.12.0\3rdParty\VTK\lib\vtkfreetype-9.0d.lib;D:\Program Files\PCL 1.12.0\3rdParty\VTK\lib\vtkImagingSources-9.0d.lib;D:\Program Files\PCL 1.12.0\3rdParty\VTK\lib\vtkIOImage-9.0d.lib;D:\Program Files\PCL 1.12.0\3rdParty\VTK\lib\vtkzlib-9.0d.lib;D:\Program Files\PCL 1.12.0\3rdParty\VTK\lib\vtkImagingCore-9.0d.lib;D:\Program Files\PCL 1.12.0\3rdParty\VTK\lib\vtkRenderingUI-9.0d.lib;D:\Program Files\PCL 1.12.0\3rdParty\VTK\lib\vtkRenderingCore-9.0d.lib;D:\Program Files\PCL 1.12.0\3rdParty\VTK\lib\vtkCommonColor-9.0d.lib;D:\Program Files\PCL 1.12.0\3rdParty\VTK\lib\vtkFiltersGeometry-9.0d.lib;D:\Program Files\PCL 1.12.0\3rdParty\VTK\lib\vtkFiltersSources-9.0d.lib;D:\Program Files\PCL 1.12.0\3rdParty\VTK\lib\vtkFiltersGeneral-9.0d.lib;D:\Program Files\PCL 1.12.0\3rdParty\VTK\lib\vtkCommonComputationalGeometry-9.0d.lib;D:\Program Files\PCL 1.12.0\3rdParty\VTK\lib\vtkFiltersCore-9.0d.lib;D:\Program Files\PCL 1.12.0\3rdParty\VTK\lib\vtkCommonExecutionModel-9.0d.lib;D:\Program Files\PCL 1.12.0\3rdParty\VTK\lib\vtkCommonDataModel-9.0d.lib;D:\Program Files\PCL 1.12.0\3rdParty\VTK\lib\vtkCommonMisc-9.0d.lib;D:\Program Files\PCL 1.12.0\3rdParty\VTK\lib\vtkCommonTransforms-9.0d.lib;D:\Program Files\PCL 1.12.0\3rdParty\VTK\lib\vtkCommonMath-9.0d.lib;D:\Program Files\PCL 1.12.0\3rdParty\VTK\lib\vtkglew-9.0d.lib;opengl32.lib;D:\Program Files\PCL 1.12.0\3rdParty\VTK\lib\vtkCommonCore-9.0d.lib;D:\Program Files\PCL 1.12.0\3rdParty\VTK\lib\vtksys-9.0d.lib;ws2_32.lib;dbghelp.lib;psapi.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>C:/Program Files (x86)/ZED SDK/lib;C:/Program Files (x86)/ZED SDK/lib/$(Configuration);D:/Program Files/PCL 1.12.0/lib;D:/Program Files/PCL 1.12.0/lib/$(Configuration);%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>D:/REPO/zed-pcl/sample/build/RelWithDebInfo/ZED_with_PCL.lib</ImportLibrary>
+      <ProgramDataBaseFile>D:/REPO/zed-pcl/sample/build/RelWithDebInfo/ZED_with_PCL.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include="D:\REPO\zed-pcl\sample\CMakeLists.txt">
+      <UseUtf8Encoding>Always</UseUtf8Encoding>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Building Custom Rule D:/REPO/zed-pcl/sample/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SD:/REPO/zed-pcl/sample -BD:/REPO/zed-pcl/sample/build --check-stamp-file D:/REPO/zed-pcl/sample/build/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Program Files (x86)\ZED SDK\zed-config-version.cmake;C:\Program Files (x86)\ZED SDK\zed-config.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\CMakeCInformation.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\CMakeCXXInformation.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\CMakeCheckCompilerFlagCommonPatterns.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\CMakeGenericSystem.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\CMakeInitializeConfigs.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\CMakeLanguageInformation.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\CMakeParseArguments.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\CMakeRCInformation.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\CMakeSystemSpecificInformation.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\CMakeSystemSpecificInitialize.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\CheckCCompilerFlag.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\CheckCSourceCompiles.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\CheckCXXCompilerFlag.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\CheckCXXSourceCompiles.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\CheckIncludeFile.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\CheckLibraryExists.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\ExternalData.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\FindBoost.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\FindCUDA.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\FindCUDA\select_compute_arch.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\FindPackageMessage.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\FindPkgConfig.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\FindThreads.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\GenerateExportHeader.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\Internal\CheckCompilerFlag.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\Internal\CheckSourceCompiles.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\Platform\Windows-MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\Platform\Windows-MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\Platform\Windows-MSVC.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\Platform\Windows.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\Platform\WindowsPaths.cmake;D:\Program Files\PCL 1.12.0\3rdParty\VTK\lib\cmake\vtk-9.0\VTK-targets-debug.cmake;D:\Program Files\PCL 1.12.0\3rdParty\VTK\lib\cmake\vtk-9.0\VTK-targets-release.cmake;D:\Program Files\PCL 1.12.0\3rdParty\VTK\lib\cmake\vtk-9.0\VTK-targets.cmake;D:\Program Files\PCL 1.12.0\3rdParty\VTK\lib\cmake\vtk-9.0\VTK-vtk-module-find-packages.cmake;D:\Program Files\PCL 1.12.0\3rdParty\VTK\lib\cmake\vtk-9.0\VTK-vtk-module-properties.cmake;D:\Program Files\PCL 1.12.0\3rdParty\VTK\lib\cmake\vtk-9.0\patches\99\FindOpenGL.cmake;D:\Program Files\PCL 1.12.0\3rdParty\VTK\lib\cmake\vtk-9.0\vtk-config-version.cmake;D:\Program Files\PCL 1.12.0\3rdParty\VTK\lib\cmake\vtk-9.0\vtk-config.cmake;D:\Program Files\PCL 1.12.0\3rdParty\VTK\lib\cmake\vtk-9.0\vtk-prefix.cmake;D:\Program Files\PCL 1.12.0\3rdParty\VTK\lib\cmake\vtk-9.0\vtk-use-file-deprecated.cmake;D:\Program Files\PCL 1.12.0\3rdParty\VTK\lib\cmake\vtk-9.0\vtkCMakeBackports.cmake;D:\Program Files\PCL 1.12.0\3rdParty\VTK\lib\cmake\vtk-9.0\vtkEncodeString.cmake;D:\Program Files\PCL 1.12.0\3rdParty\VTK\lib\cmake\vtk-9.0\vtkHashSource.cmake;D:\Program Files\PCL 1.12.0\3rdParty\VTK\lib\cmake\vtk-9.0\vtkModule.cmake;D:\Program Files\PCL 1.12.0\3rdParty\VTK\lib\cmake\vtk-9.0\vtkModuleJson.cmake;D:\Program Files\PCL 1.12.0\3rdParty\VTK\lib\cmake\vtk-9.0\vtkModuleTesting.cmake;D:\Program Files\PCL 1.12.0\3rdParty\VTK\lib\cmake\vtk-9.0\vtkObjectFactory.cmake;D:\Program Files\PCL 1.12.0\3rdParty\VTK\lib\cmake\vtk-9.0\vtkTopologicalSort.cmake;D:\Program Files\PCL 1.12.0\cmake\Modules\FindEigen.cmake;D:\Program Files\PCL 1.12.0\cmake\Modules\FindFLANN.cmake;D:\Program Files\PCL 1.12.0\cmake\Modules\FindOpenNI2.cmake;D:\Program Files\PCL 1.12.0\cmake\Modules\FindQhull.cmake;D:\Program Files\PCL 1.12.0\cmake\PCLConfig.cmake;D:\Program Files\PCL 1.12.0\cmake\PCLConfigVersion.cmake;D:\REPO\zed-pcl\sample\build\CMakeFiles\3.22.1\CMakeCCompiler.cmake;D:\REPO\zed-pcl\sample\build\CMakeFiles\3.22.1\CMakeCXXCompiler.cmake;D:\REPO\zed-pcl\sample\build\CMakeFiles\3.22.1\CMakeRCCompiler.cmake;D:\REPO\zed-pcl\sample\build\CMakeFiles\3.22.1\CMakeSystem.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\REPO\zed-pcl\sample\build\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Building Custom Rule D:/REPO/zed-pcl/sample/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SD:/REPO/zed-pcl/sample -BD:/REPO/zed-pcl/sample/build --check-stamp-file D:/REPO/zed-pcl/sample/build/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Program Files (x86)\ZED SDK\zed-config-version.cmake;C:\Program Files (x86)\ZED SDK\zed-config.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\CMakeCInformation.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\CMakeCXXInformation.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\CMakeCheckCompilerFlagCommonPatterns.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\CMakeGenericSystem.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\CMakeInitializeConfigs.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\CMakeLanguageInformation.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\CMakeParseArguments.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\CMakeRCInformation.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\CMakeSystemSpecificInformation.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\CMakeSystemSpecificInitialize.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\CheckCCompilerFlag.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\CheckCSourceCompiles.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\CheckCXXCompilerFlag.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\CheckCXXSourceCompiles.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\CheckIncludeFile.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\CheckLibraryExists.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\ExternalData.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\FindBoost.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\FindCUDA.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\FindCUDA\select_compute_arch.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\FindPackageMessage.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\FindPkgConfig.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\FindThreads.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\GenerateExportHeader.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\Internal\CheckCompilerFlag.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\Internal\CheckSourceCompiles.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\Platform\Windows-MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\Platform\Windows-MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\Platform\Windows-MSVC.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\Platform\Windows.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\Platform\WindowsPaths.cmake;D:\Program Files\PCL 1.12.0\3rdParty\VTK\lib\cmake\vtk-9.0\VTK-targets-debug.cmake;D:\Program Files\PCL 1.12.0\3rdParty\VTK\lib\cmake\vtk-9.0\VTK-targets-release.cmake;D:\Program Files\PCL 1.12.0\3rdParty\VTK\lib\cmake\vtk-9.0\VTK-targets.cmake;D:\Program Files\PCL 1.12.0\3rdParty\VTK\lib\cmake\vtk-9.0\VTK-vtk-module-find-packages.cmake;D:\Program Files\PCL 1.12.0\3rdParty\VTK\lib\cmake\vtk-9.0\VTK-vtk-module-properties.cmake;D:\Program Files\PCL 1.12.0\3rdParty\VTK\lib\cmake\vtk-9.0\patches\99\FindOpenGL.cmake;D:\Program Files\PCL 1.12.0\3rdParty\VTK\lib\cmake\vtk-9.0\vtk-config-version.cmake;D:\Program Files\PCL 1.12.0\3rdParty\VTK\lib\cmake\vtk-9.0\vtk-config.cmake;D:\Program Files\PCL 1.12.0\3rdParty\VTK\lib\cmake\vtk-9.0\vtk-prefix.cmake;D:\Program Files\PCL 1.12.0\3rdParty\VTK\lib\cmake\vtk-9.0\vtk-use-file-deprecated.cmake;D:\Program Files\PCL 1.12.0\3rdParty\VTK\lib\cmake\vtk-9.0\vtkCMakeBackports.cmake;D:\Program Files\PCL 1.12.0\3rdParty\VTK\lib\cmake\vtk-9.0\vtkEncodeString.cmake;D:\Program Files\PCL 1.12.0\3rdParty\VTK\lib\cmake\vtk-9.0\vtkHashSource.cmake;D:\Program Files\PCL 1.12.0\3rdParty\VTK\lib\cmake\vtk-9.0\vtkModule.cmake;D:\Program Files\PCL 1.12.0\3rdParty\VTK\lib\cmake\vtk-9.0\vtkModuleJson.cmake;D:\Program Files\PCL 1.12.0\3rdParty\VTK\lib\cmake\vtk-9.0\vtkModuleTesting.cmake;D:\Program Files\PCL 1.12.0\3rdParty\VTK\lib\cmake\vtk-9.0\vtkObjectFactory.cmake;D:\Program Files\PCL 1.12.0\3rdParty\VTK\lib\cmake\vtk-9.0\vtkTopologicalSort.cmake;D:\Program Files\PCL 1.12.0\cmake\Modules\FindEigen.cmake;D:\Program Files\PCL 1.12.0\cmake\Modules\FindFLANN.cmake;D:\Program Files\PCL 1.12.0\cmake\Modules\FindOpenNI2.cmake;D:\Program Files\PCL 1.12.0\cmake\Modules\FindQhull.cmake;D:\Program Files\PCL 1.12.0\cmake\PCLConfig.cmake;D:\Program Files\PCL 1.12.0\cmake\PCLConfigVersion.cmake;D:\REPO\zed-pcl\sample\build\CMakeFiles\3.22.1\CMakeCCompiler.cmake;D:\REPO\zed-pcl\sample\build\CMakeFiles\3.22.1\CMakeCXXCompiler.cmake;D:\REPO\zed-pcl\sample\build\CMakeFiles\3.22.1\CMakeRCCompiler.cmake;D:\REPO\zed-pcl\sample\build\CMakeFiles\3.22.1\CMakeSystem.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\REPO\zed-pcl\sample\build\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Building Custom Rule D:/REPO/zed-pcl/sample/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SD:/REPO/zed-pcl/sample -BD:/REPO/zed-pcl/sample/build --check-stamp-file D:/REPO/zed-pcl/sample/build/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\Program Files (x86)\ZED SDK\zed-config-version.cmake;C:\Program Files (x86)\ZED SDK\zed-config.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\CMakeCInformation.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\CMakeCXXInformation.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\CMakeCheckCompilerFlagCommonPatterns.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\CMakeGenericSystem.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\CMakeInitializeConfigs.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\CMakeLanguageInformation.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\CMakeParseArguments.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\CMakeRCInformation.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\CMakeSystemSpecificInformation.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\CMakeSystemSpecificInitialize.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\CheckCCompilerFlag.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\CheckCSourceCompiles.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\CheckCXXCompilerFlag.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\CheckCXXSourceCompiles.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\CheckIncludeFile.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\CheckLibraryExists.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\ExternalData.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\FindBoost.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\FindCUDA.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\FindCUDA\select_compute_arch.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\FindPackageMessage.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\FindPkgConfig.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\FindThreads.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\GenerateExportHeader.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\Internal\CheckCompilerFlag.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\Internal\CheckSourceCompiles.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\Platform\Windows-MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\Platform\Windows-MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\Platform\Windows-MSVC.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\Platform\Windows.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\Platform\WindowsPaths.cmake;D:\Program Files\PCL 1.12.0\3rdParty\VTK\lib\cmake\vtk-9.0\VTK-targets-debug.cmake;D:\Program Files\PCL 1.12.0\3rdParty\VTK\lib\cmake\vtk-9.0\VTK-targets-release.cmake;D:\Program Files\PCL 1.12.0\3rdParty\VTK\lib\cmake\vtk-9.0\VTK-targets.cmake;D:\Program Files\PCL 1.12.0\3rdParty\VTK\lib\cmake\vtk-9.0\VTK-vtk-module-find-packages.cmake;D:\Program Files\PCL 1.12.0\3rdParty\VTK\lib\cmake\vtk-9.0\VTK-vtk-module-properties.cmake;D:\Program Files\PCL 1.12.0\3rdParty\VTK\lib\cmake\vtk-9.0\patches\99\FindOpenGL.cmake;D:\Program Files\PCL 1.12.0\3rdParty\VTK\lib\cmake\vtk-9.0\vtk-config-version.cmake;D:\Program Files\PCL 1.12.0\3rdParty\VTK\lib\cmake\vtk-9.0\vtk-config.cmake;D:\Program Files\PCL 1.12.0\3rdParty\VTK\lib\cmake\vtk-9.0\vtk-prefix.cmake;D:\Program Files\PCL 1.12.0\3rdParty\VTK\lib\cmake\vtk-9.0\vtk-use-file-deprecated.cmake;D:\Program Files\PCL 1.12.0\3rdParty\VTK\lib\cmake\vtk-9.0\vtkCMakeBackports.cmake;D:\Program Files\PCL 1.12.0\3rdParty\VTK\lib\cmake\vtk-9.0\vtkEncodeString.cmake;D:\Program Files\PCL 1.12.0\3rdParty\VTK\lib\cmake\vtk-9.0\vtkHashSource.cmake;D:\Program Files\PCL 1.12.0\3rdParty\VTK\lib\cmake\vtk-9.0\vtkModule.cmake;D:\Program Files\PCL 1.12.0\3rdParty\VTK\lib\cmake\vtk-9.0\vtkModuleJson.cmake;D:\Program Files\PCL 1.12.0\3rdParty\VTK\lib\cmake\vtk-9.0\vtkModuleTesting.cmake;D:\Program Files\PCL 1.12.0\3rdParty\VTK\lib\cmake\vtk-9.0\vtkObjectFactory.cmake;D:\Program Files\PCL 1.12.0\3rdParty\VTK\lib\cmake\vtk-9.0\vtkTopologicalSort.cmake;D:\Program Files\PCL 1.12.0\cmake\Modules\FindEigen.cmake;D:\Program Files\PCL 1.12.0\cmake\Modules\FindFLANN.cmake;D:\Program Files\PCL 1.12.0\cmake\Modules\FindOpenNI2.cmake;D:\Program Files\PCL 1.12.0\cmake\Modules\FindQhull.cmake;D:\Program Files\PCL 1.12.0\cmake\PCLConfig.cmake;D:\Program Files\PCL 1.12.0\cmake\PCLConfigVersion.cmake;D:\REPO\zed-pcl\sample\build\CMakeFiles\3.22.1\CMakeCCompiler.cmake;D:\REPO\zed-pcl\sample\build\CMakeFiles\3.22.1\CMakeCXXCompiler.cmake;D:\REPO\zed-pcl\sample\build\CMakeFiles\3.22.1\CMakeRCCompiler.cmake;D:\REPO\zed-pcl\sample\build\CMakeFiles\3.22.1\CMakeSystem.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\REPO\zed-pcl\sample\build\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Building Custom Rule D:/REPO/zed-pcl/sample/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SD:/REPO/zed-pcl/sample -BD:/REPO/zed-pcl/sample/build --check-stamp-file D:/REPO/zed-pcl/sample/build/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\Program Files (x86)\ZED SDK\zed-config-version.cmake;C:\Program Files (x86)\ZED SDK\zed-config.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\CMakeCInformation.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\CMakeCXXInformation.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\CMakeCheckCompilerFlagCommonPatterns.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\CMakeGenericSystem.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\CMakeInitializeConfigs.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\CMakeLanguageInformation.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\CMakeParseArguments.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\CMakeRCInformation.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\CMakeSystemSpecificInformation.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\CMakeSystemSpecificInitialize.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\CheckCCompilerFlag.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\CheckCSourceCompiles.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\CheckCXXCompilerFlag.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\CheckCXXSourceCompiles.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\CheckIncludeFile.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\CheckLibraryExists.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\ExternalData.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\FindBoost.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\FindCUDA.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\FindCUDA\select_compute_arch.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\FindPackageMessage.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\FindPkgConfig.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\FindThreads.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\GenerateExportHeader.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\Internal\CheckCompilerFlag.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\Internal\CheckSourceCompiles.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\Platform\Windows-MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\Platform\Windows-MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\Platform\Windows-MSVC.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\Platform\Windows.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\Platform\WindowsPaths.cmake;D:\Program Files\PCL 1.12.0\3rdParty\VTK\lib\cmake\vtk-9.0\VTK-targets-debug.cmake;D:\Program Files\PCL 1.12.0\3rdParty\VTK\lib\cmake\vtk-9.0\VTK-targets-release.cmake;D:\Program Files\PCL 1.12.0\3rdParty\VTK\lib\cmake\vtk-9.0\VTK-targets.cmake;D:\Program Files\PCL 1.12.0\3rdParty\VTK\lib\cmake\vtk-9.0\VTK-vtk-module-find-packages.cmake;D:\Program Files\PCL 1.12.0\3rdParty\VTK\lib\cmake\vtk-9.0\VTK-vtk-module-properties.cmake;D:\Program Files\PCL 1.12.0\3rdParty\VTK\lib\cmake\vtk-9.0\patches\99\FindOpenGL.cmake;D:\Program Files\PCL 1.12.0\3rdParty\VTK\lib\cmake\vtk-9.0\vtk-config-version.cmake;D:\Program Files\PCL 1.12.0\3rdParty\VTK\lib\cmake\vtk-9.0\vtk-config.cmake;D:\Program Files\PCL 1.12.0\3rdParty\VTK\lib\cmake\vtk-9.0\vtk-prefix.cmake;D:\Program Files\PCL 1.12.0\3rdParty\VTK\lib\cmake\vtk-9.0\vtk-use-file-deprecated.cmake;D:\Program Files\PCL 1.12.0\3rdParty\VTK\lib\cmake\vtk-9.0\vtkCMakeBackports.cmake;D:\Program Files\PCL 1.12.0\3rdParty\VTK\lib\cmake\vtk-9.0\vtkEncodeString.cmake;D:\Program Files\PCL 1.12.0\3rdParty\VTK\lib\cmake\vtk-9.0\vtkHashSource.cmake;D:\Program Files\PCL 1.12.0\3rdParty\VTK\lib\cmake\vtk-9.0\vtkModule.cmake;D:\Program Files\PCL 1.12.0\3rdParty\VTK\lib\cmake\vtk-9.0\vtkModuleJson.cmake;D:\Program Files\PCL 1.12.0\3rdParty\VTK\lib\cmake\vtk-9.0\vtkModuleTesting.cmake;D:\Program Files\PCL 1.12.0\3rdParty\VTK\lib\cmake\vtk-9.0\vtkObjectFactory.cmake;D:\Program Files\PCL 1.12.0\3rdParty\VTK\lib\cmake\vtk-9.0\vtkTopologicalSort.cmake;D:\Program Files\PCL 1.12.0\cmake\Modules\FindEigen.cmake;D:\Program Files\PCL 1.12.0\cmake\Modules\FindFLANN.cmake;D:\Program Files\PCL 1.12.0\cmake\Modules\FindOpenNI2.cmake;D:\Program Files\PCL 1.12.0\cmake\Modules\FindQhull.cmake;D:\Program Files\PCL 1.12.0\cmake\PCLConfig.cmake;D:\Program Files\PCL 1.12.0\cmake\PCLConfigVersion.cmake;D:\REPO\zed-pcl\sample\build\CMakeFiles\3.22.1\CMakeCCompiler.cmake;D:\REPO\zed-pcl\sample\build\CMakeFiles\3.22.1\CMakeCXXCompiler.cmake;D:\REPO\zed-pcl\sample\build\CMakeFiles\3.22.1\CMakeRCCompiler.cmake;D:\REPO\zed-pcl\sample\build\CMakeFiles\3.22.1\CMakeSystem.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\REPO\zed-pcl\sample\build\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="D:\REPO\zed-pcl\sample\src\main.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="D:\REPO\zed-pcl\sample\build\ZERO_CHECK.vcxproj">
+      <Project>{3E2E2BAB-92B3-38B0-BC7C-180B9F875693}</Project>
+      <Name>ZERO_CHECK</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
